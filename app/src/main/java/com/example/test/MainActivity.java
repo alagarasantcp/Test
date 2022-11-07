@@ -8,6 +8,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.navHostFragment);
         navController = navHostFragment.getNavController();
-
+        Log.e("TAG", "onCreate: "+"Test project");
     }
 
     @Override
