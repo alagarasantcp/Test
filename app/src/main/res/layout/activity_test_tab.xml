@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".TestTab">
+
+    <com.example.test.SegmentedGroup
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/group_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sg_background_color="@android:color/transparent"
+        app:sg_corner_radius="10dp"
+        app:sg_corner_color="@color/alloted"
+        app:sg_corner_size="1dp"
+        app:sg_corner_color_selected="@color/alloted"
+        app:sg_background_color_selected="@color/alloted"
+        app:sg_text_color="#3C3737"
+        app:sg_text_color_selected="#ffffff">
+
+        <com.example.test.SegmentedTab
+            android:layout_weight="1"
+            android:id="@+id/element_one_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Day" />
+
+        <com.example.test.SegmentedTab
+            android:layout_weight="1"
+            android:id="@+id/element_one_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Half Day" />
+
+        <com.example.test.SegmentedTab
+            android:layout_weight="1"
+            android:id="@+id/element_one_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hour" />
+
+    </com.example.test.SegmentedGroup>
+
+    <LinearLayout
+        android:id="@+id/customlayout"
+        android:background="@drawable/custom_radio"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/group_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/alloted"
+            android:textStyle="bold"
+            android:text="FULL DAY"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/r1"
+            android:layout_weight="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+        <View
+            android:background="@color/alloted"
+            android:layout_width="2dp"
+            android:layout_height="match_parent">
+        </View>
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="HALF DAY"
+            android:id="@+id/r2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+        <View
+            android:background="@color/alloted"
+            android:layout_width="2dp"
+            android:layout_height="match_parent">
+        </View>
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="HOUR"
+            android:id="@+id/r3"
+            android:layout_weight="2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
